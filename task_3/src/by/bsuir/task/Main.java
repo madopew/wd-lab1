@@ -20,10 +20,10 @@ public class Main {
         writer.println("Input h:");
         var h = reader.readDouble();
 
-        outputTask(writer, a, b, h);
+        outputFunctionTable(writer, a, b, h);
     }
 
-    private static void outputTask(Writer writer, double a, double b, double h) {
+    private static void outputFunctionTable(Writer writer, double a, double b, double h) {
         var range = new Range(a, b, h);
         var calculator = new TaskCalculator();
         for (var number: range) {
